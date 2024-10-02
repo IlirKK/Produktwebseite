@@ -284,7 +284,86 @@ textarea::placeholder {
   left: 0px;
 }
 
+.productContainerSurgery {
+  display: flex;
+  padding-top: 4rem;
+  justify-content: space-evenly;
+  padding-right: 4rem;
+  
+}
 
+.surgeryRobot img {
+  max-width: 100%;
+  min-width: 300px;
+  min-height: auto;
+  
+  border-radius: 45px 45px;
+}
+
+.surgeryRobot {
+  padding-left: 10vw;
+  
+}
+.productTextContainerSurgery {
+
+  width: 50%;
+}
+
+.productTextTitleSurgery {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(81, 93, 135);
+  margin-bottom: 21px;
+  
+  padding-top: 1rem;
+  padding-left: 10vw;
+}
+
+.productTextDescriptionSurgery {
+  
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 10vw;
+}
+
+.productContainerChip {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4rem;
+  justify-content: space-evenly;
+  padding-right: 4rem;
+}
+
+.chipBrain img {
+  max-width: 20vw;
+  min-width: 300px;
+  min-height: auto;
+  
+  border-radius: 45px 45px;
+}
+
+.chipBrain {
+  max-width: 20vw;
+  padding-left: 10vw;
+  
+}
+
+.productTextTitleChip {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(81, 93, 135);
+  margin-bottom: 21px;
+  margin-right: 120px;
+  padding-top: 1rem;
+  padding-left: 10vw;
+}
+
+.productTextDescriptionChip {
+  max-width: 18em;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+padding-left: 10vw;
+}
 
 
 
@@ -308,7 +387,18 @@ textarea::placeholder {
     gap: 1rem;
     margin-top: 20rem;
   }
-
+  .productContainerSurgery {
+    flex-direction: column;
+    width:100vw;
+    align-items: stretch;
+   
+    
+  }
+  .productContainerChip {
+    flex-direction: column;
+    
+  }
+ 
   .map iframe{
     height: 400px;
   }
