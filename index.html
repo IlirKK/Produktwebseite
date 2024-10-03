@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="stylesheets/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
-      <a href="index.html"> <img class="navLogo" src="./images/widelogo_transparent.png" alt="Big nonSense Logo"> </a>
+      <a href="index.html"> <img class="navLogo fluid-shadow" src="./images/widelogo_transparent.png" alt="Big nonSense Logo"> </a>
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,49 +25,108 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="pages/aboutus.html">Our Team</a>
+            <a class="nav-link" href="./pages/product.html">Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/contact.html">Contact</a>
+            <a class="nav-link" href="./pages/aboutus.html">Our Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/product.html">Product</a>
+            <a class="nav-link" href="./pages/contact.html">Contact</a>
           </li>
+          
         </ul>
         <button class="btn btn-dark ms-auto login-btn" type="button"
-          onclick="window.location.href='/pages/login.html'">Login</button>
+          onclick="window.location.href='./pages/login.html'">Login</button>
       </div>
     </div>
   </nav>
 
-  <div class="mainContainer">
+  <div id="contentCarousel" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="happyMan"><img src="./images/homebackground.png" alt="Happy man sitting in living room"></div>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#contentCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#contentCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#contentCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
 
-    <div class="homeTextContainer">
-      <div class="homeTextTitle">Sense less – be more</div>
-      <div class="homeTextDescription">The perception of our environment, the free market and even ourselves are
-        constantly challenged by sensory stimuli.
-        <br></br>
-        We found a solution to ensure a unchallenged perception of <b>your</b> reality.
-        <br></br>
-        
 
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="mainContainer">
+          <div class="happyMan">
+            <img src="./images/techbro.png" alt="Happy man sitting in living room">
+          </div>
+          <div class="homeTextContainer">
+            <div class="homeTextTitle">Sense less – achieve more</div>
+            <div class="homeTextDescription">Your mind is like an athlete, focused on achieving your goals. <br>
+              Cancel any distractions and perceptions that slow you down with <b>nonSense</b>
+              <br><br>
+              The future of success is sensing less.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="mainContainer">
+          <div class="happyMan">
+            <img src="./images/mother_child.jpg" alt="Familyhood">
+          </div>
+          <div class="homeTextContainer">
+            <div class="homeTextTitle">Sense less - care more</div>
+            <div class="homeTextDescription">Being a parent is a full time job, with zero vacation or sick days. <br>
+              With <b>nonSense</b> you're able to cut out a bit of the world and treat yourself to some relief.
+
+              <br><br>
+              Not just you but your whole family will sense less.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="mainContainer">
+          <div class="happyMan">
+            <img src="./images/workingclass_bbq.jpg" alt="Working Class">
+          </div>
+          <div class="homeTextContainer">
+            <div class="homeTextTitle">Sense less - live more</div>
+            <div class="homeTextDescription">
+              Unwinding after a long day be tough, with work still lingering on your mind. <br>
+              Using <b>nonSense</b> allows you to surpress the sensations of the workday.
+              <br><br>
+              Cancel complex feelings and perceptions, just be simple.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+    <button class="carousel-control-prev custom-control" type="button" data-bs-target="#contentCarousel"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next custom-control" type="button" data-bs-target="#contentCarousel"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 
   <hr width="100%" size="2">
 
   <div class="iconContainer">
-  <div class="icon-row">
-    <img src="./images/ear_transparent.png" alt="ear icon" class="icon">
-    <img src="./images/eye_transparent.png" alt="eye icon" class="icon">
-    <img src="./images/finger_transparent.png" alt="finger icon" class="icon">
-    <img src="./images/nose_transparent.png" alt="nose icon" class="icon">
-    <img src="./images/tongue_transparent.png" alt="tongue icon" class="icon">
+    <div class="icon-row">
+      <img src="./images/ear_transparent.png" alt="ear icon" class="icon">
+      <img src="./images/eye_transparent.png" alt="eye icon" class="icon">
+      <img src="./images/finger_transparent.png" alt="finger icon" class="icon">
+      <img src="./images/nose_transparent.png" alt="nose icon" class="icon">
+      <img src="./images/tongue_transparent.png" alt="tongue icon" class="icon">
+    </div>
   </div>
-</div>
 
   <div class="subContainer">
     <section class="testimonials-section">
@@ -76,11 +136,11 @@
             <div class="testimonial">
               <img src="./images/image_testemonial_a.jpg" alt="John Doe" class="testimonial-img">
               <div class="testimonial-content">
-                <p>"This product has changed the way I work. Highly recommend it!"</p>
+                <p>"This product helps me stay calm and focused in busy environments. It’s made a huge difference."</p>
               </div>
               <div class="testimonial-author">
                 <h5>John Doe</h5>
-                <p>CEO, Company A</p>
+                <p>Project Manager, Urban Media</p>
               </div>
             </div>
           </div>
@@ -88,11 +148,11 @@
             <div class="testimonial">
               <img src="./images/image_testemonial_b.avif" alt="Jane Smith" class="testimonial-img">
               <div class="testimonial-content">
-                <p>"Fantastic results. I’ve seen massive improvements since using it."</p>
+                <p>"I didn’t realize how much sensory overstimulation affected me until I tried this. It’s life-changing."</p>
               </div>
               <div class="testimonial-author">
                 <h5>Jane Smith</h5>
-                <p>CTO, Company B</p>
+                <p>Graphic Designer, DFG Studios</p>
               </div>
             </div>
           </div>
@@ -100,11 +160,11 @@
             <div class="testimonial">
               <img src="./images/image_testemonial_c.jpg" alt="Mike Johnson" class="testimonial-img">
               <div class="testimonial-content">
-                <p>"The best investment I’ve ever made for my business!"</p>
+                <p>"It’s a simple tool that helps me manage stress and find peace in a fast-paced world."</p>
               </div>
               <div class="testimonial-author">
-                <h5>Mike Johnson</h5>
-                <p>Founder, Startup C</p>
+                <h5>Amir Ashar</h5>
+                <p>Software Engineer, Reddit</p>
               </div>
             </div>
           </div>
