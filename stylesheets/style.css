@@ -196,12 +196,7 @@
   margin-left: 5vw;
   margin-right: 5vw;
 }
-.gigaContainer{
-  
-}
-.productTextContainer{
-  
-}
+
 .productTextTitle {
   font-size: calc(1rem + 1vw);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -408,7 +403,6 @@ textarea::placeholder {
 .text-center {
   padding: 15px;
 }
-
 
 
 /* Media query styling ab hier: */
