@@ -468,4 +468,32 @@ textarea::placeholder {
     justify-self: center;
     min-width: 200px;
   }
+
+
+  .productHeader{
+    font-size: 34px;
+  }
+
+  .productTextTitle{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:380px) {
+.productTextTitle{
+  font-size: 18px;
+}
+
+.productTextDescription{
+  font-size: 14px;
+}
+
+.productHeader {
+  font-size: 20px;
+
+
+}
+
+
+
 }
