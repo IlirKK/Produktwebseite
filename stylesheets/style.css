@@ -126,9 +126,7 @@
 }
 
 .carousel-item {
-  height: 90vh;
-  
-  
+  height: 90vh; 
 }
 .custom-control {
   opacity: 1;
@@ -227,6 +225,7 @@
   border: solid 3px rgb(81, 93, 135);
   border-radius: 45px;
 }
+
 .map-container {
   width: 80%;
   max-width: 800px;
@@ -290,7 +289,6 @@ iframe {
   text-decoration: none;
 }
 
-
 .formContainerStyle {
   padding: 20px;
 }
@@ -317,7 +315,6 @@ iframe {
   color: #fff;
   border-radius: 0.4rem;
 }
-
 
 .checkboxLabel {
   display: flex; 
@@ -378,9 +375,6 @@ textarea::placeholder {
   background-size: cover;
 }
 
-
-
-
 .team-member {
   text-align: center;
   margin-bottom: 40px; 
@@ -404,7 +398,6 @@ textarea::placeholder {
   padding: 15px;
 }
 
-
 /* Media query styling ab hier: */
 @media (max-width:960px) {
   .contactStyle {
@@ -421,14 +414,12 @@ textarea::placeholder {
     gap: 1rem;
     margin-top: 20rem;
   }
-
   .map iframe {
     height: 400px;
   }
   .carousel-item {
     min-height: 67vh;
     max-height: 70vh;
-
   }
   .mainContainer {
     padding-left: 40px;
@@ -438,7 +429,6 @@ textarea::placeholder {
     margin-top: 0px;
   }
   .productContainer {
-    
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -454,32 +444,27 @@ textarea::placeholder {
   .homeTextTitle {
     font-size: 24px;
   }
-
   .homeTextDescription{
     font-size: 16.5px;
   }
-
   .happyMan {
     padding-right: 40px;
   }
-
   .loginSection {
     padding: 22px;
     justify-self: center;
     min-width: 200px;
   }
-
-
   .productHeader{
     font-size: 34px;
   }
-
   .productTextTitle{
     margin-top: 20px;
   }
 }
 
 @media (max-width:380px) {
+  
 .productTextTitle{
   font-size: 18px;
 }
@@ -490,10 +475,4 @@ textarea::placeholder {
 
 .productHeader {
   font-size: 20px;
-
-
-}
-
-
-
-}
+}}
